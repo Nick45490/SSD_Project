@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "car_catalogue"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "car_catalogue-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
